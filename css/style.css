@@ -1,0 +1,243 @@
+body {
+    background-image: url('../imagens/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    overflow-y: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+}
+
+table, tr, td {
+    border: solid black 1px;
+    height: 60px;
+}
+
+table {
+    background-image: url(../imagens/wallpapersden.com_pokemon-pikachu-art_1920x1080\ \(1\).jpg);
+    background-position: center;
+    padding: 20px;
+    box-shadow: 13px 13px 13px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+td {
+    width: 60px;
+    border-radius: 50%;
+    background-color: none;
+}
+
+.discoExemploPlayer1 {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-image: url(../imagens/pokeballRed60.png);
+    border-radius: 50%;
+    margin-top: -50px;
+}
+
+.discoExemploPlayer2 {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-image: url(../imagens/pokeballBlue60.png);
+    border-radius: 50%;
+    margin-top: -50px;
+}
+
+@keyframes quedaDisco {
+    from {
+        top: -300px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.discoVermelho {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: rgb(100, 100, 100);
+    background-image: url(../imagens/pokeballRed.png);
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+    animation-name: quedaDisco;
+    animation-duration: 1s;
+}
+
+.discoPreto {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: rgb(100, 100, 100);
+    background-image: url(../imagens/pokeballBlue.png);
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+    animation-name: quedaDisco;
+    animation-duration: 1s;
+}
+
+#textoInicial {
+    text-align: center;
+}
+
+.discos {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.discos div {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+#startBtn {
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    display: inline-block;
+    background-color: #1976d2;
+    color: white;
+    outline: none;
+    position: relative;
+    top: 17px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+#startBtn:hover {
+    background-color: #1a237e;
+    transition: 1.8s;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    display: none;
+}
+
+#bora {
+    text-align: center;
+    align-items: center;
+    font-weight: normal;
+    font-size: 30px;
+    display: block;
+}
+
+.centerInicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin: 15px 0;
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(170, 170, 170);
+    color: rgb(50, 50, 50);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+input:hover {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    transition: 1.8s;
+}
+
+#jogador1, #jogador2, #labelPontuacao, #placar1, #placar2, #x {
+    display: none;
+    font-size: 23px;
+    margin: 0 7px;
+    font-weight: bold;
+}
+
+.pontuacao, .empate {
+    display: flex;
+    justify-content: center;
+    background-color: #80d8ff;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.placar {
+    display: flex;
+    justify-content: center;
+}
+h3 p{
+    display: inline;
+}
+#img{
+    width: 187px;
+}
+#h3{
+    font-style: italic;
+}
+#vez{
+    font-weight: bold;
+}
+@media screen and (max-width: 520px) {
+    #h3 {
+        margin: 10px;
+        margin-top: 0;
+    }
+    table {
+        padding: 0;
+    }
+    input, #startBtn {
+        width: 75%;
+        text-align: center;
+    }
+    tr, td{
+        width: 100vw;
+        height: 10vh;
+    }
+    .pontuacao{
+        display: none;
+    }
+}
+
+@media (max-width: 310px) {
+    
+    
+    h3#bora{
+        font-size: 20px;
+    }
+}
+
+.classVencedor{
+    color: #000;
+    font-size: 25px;
+    text-align: center;
+}

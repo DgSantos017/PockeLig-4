@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeLig-4</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/pokeballRed60.png">
+</head>
+
+<body>
+    <div class="centerInicial">
+        <h3 id="bora"> PokeLig-4</h3>
+        <input type="text" id="play1" placeholder=" Player 1" maxlength="8">
+        <input type="text" id="play2" placeholder=" Player 2" maxlength="8">
+        <button id="startBtn" class="show">START</button>
+    </div><!-- centerInicial -->
+
+    <div id="centerFinal">
+        <img id="img" src="imagens/pi.png" alt="pickachu">
+        <div class="pontuacao" id="point">
+            <div id="jogador1"> </div> <div id="x"> x </div><div id="jogador2"> </div>
+        </div> 
+        <div class="discos hide" id="ver">
+           <br><br><br>
+        </div>
+        <div class="discos hide" id="seen">
+            <div class="discoExemploPlayer1" id="vermelho"></div>
+            <div class="discoExemploPlayer2" id="preto"></div>
+        </div>
+        <h3 id="h3"> Sua vez <p id="vez"></p></h3>
+    </div>
+    <!-- centerFinal -->
+
+    <script src="js/engine.js"></script>
+    <script src="js/verificarVitoria.js"></script>
+
+</body>
+
+</html>
